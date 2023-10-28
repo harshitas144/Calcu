@@ -4,3 +4,4 @@
 
 # Run your Python script (replace 'calculator.py' with your file's name)
 python calculator.ipynb
+pytest caltest_py.py
