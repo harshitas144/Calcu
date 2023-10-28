@@ -17,6 +17,9 @@ jobs:
       run: |
         
         ./build.sh
+        - name: Run Tests
+        run: |
+          ./build.sh  # You can call the same build script to run tests
       shell: bash
 
     - name: Upload Artifact
