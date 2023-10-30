@@ -10,20 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Build
-      run: |
-        
-        ./build.sh
+      - name: Build
+        run: |
+          ./build.sh
+
       - name: Run Tests
         run: |
           ./build.sh  # You can call the same build script to run tests
-      shell: bash
 
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: my-artifact
-        path: path/to/artifact  # Change this to your build artifact path
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: path/to/artifact  # Change this to your build artifact path
+
