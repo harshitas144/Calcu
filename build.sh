@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Activate a virtual environment (if applicable)
+#Activate a virtual environment (if applicable)
 # Replace 'venv' with the name of your virtual environment if you're using one.
 source venv/bin/activate
 
@@ -37,7 +37,7 @@ else
 fi
 
 # If you don't have tests, you can run your calculator program (replace 'calculator.py' with your program)
-python calculator.ipynb
+python calculator.py
 
 # Deactivate the virtual environment (if applicable)
 deactivate
